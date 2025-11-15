@@ -13,10 +13,12 @@ public class App {
 
         Scanner sc = new Scanner(planets);
 
-        System.out.println("Working directory: " + System.getProperty("user.dir"));
-        System.out.println(sc.hasNextLine());
+        // System.out.println("Working directory: " + System.getProperty("user.dir"));
+        // System.out.println(sc.hasNextLine());
 
         int lineCount = 0;
+
+  
         
         while (sc.hasNextLine()) {
              sc.nextLine();
@@ -31,25 +33,21 @@ public class App {
 
         System.out.println(lineCount);
 
-        String [] fullLine =new String [lineCount];
-
+        String[] fullLine = new String[lineCount];
 
         for (int i = 0; i < lineCount; i++) {
             fullLine[i] = sc.nextLine();
             System.out.println(fullLine[i]);
-
-
         }
 
-            // String separate = "[,]";
+        // String separate = "[,]";
 
-            // String[] arr = temp.split(separate);
-            // for(String element : arr){
-            //     System.out.println(element);
-            // }
+        // String[] arr = temp.split(separate);
+        // for (String element : arr) {
+        // System.out.println(element);
+        // }
 
-           // System.out.println(temp);
-        
+        // System.out.println(temp);
 
     }
 }
