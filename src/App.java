@@ -14,10 +14,6 @@ public class App {
         File planets = new File("planets.txt");
 
         Scanner sc = new Scanner(planets);
-
-    
-
-    public static String [] ()
         
         ArrayList<String> fullLine = new ArrayList<String>();
 
@@ -27,9 +23,7 @@ public class App {
             fullLine.add(sc.nextLine());
 
         }
-    
 
-    public static 
 
         String separate = "[,]";
         String [] parameterCount = fullLine.get(0).split(separate);
