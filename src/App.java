@@ -1,7 +1,7 @@
 
 /* DEVELOPERS: Audra Segura, Sadia Firdous
  * DATE: 11-15-2025
- * DESCRIPTION: Create a display of planets, their sizes, distances,number of moons they have, and the description of the planets.
+ * DESCRIPTION: Create a display of planets, their sizes, distances, number of moons they have, and the description of the planets.
  */
 import java.io.File;
 import java.util.ArrayList;
