@@ -5,6 +5,7 @@
  */
 import java.io.File;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -13,41 +14,27 @@ public class App {
 
         Scanner sc = new Scanner(planets);
 
-        // System.out.println("Working directory: " + System.getProperty("user.dir"));
-        // System.out.println(sc.hasNextLine());
+        ArrayList<String> fullLine = new ArrayList<String>();
 
-        int lineCount = 0;
-
-  
-        
         while (sc.hasNextLine()) {
-             sc.nextLine();
-            //System.out.println(temp);
+            fullLine.add(sc.nextLine());
+        }
+    }
 
+    public static String[] splitLines(ArrayList<String> fullLine) {
 
-            lineCount++;
+        String separate = "[,]";
+        String[] parameterCount = fullLine.get(0).split(separate);
+        String[] oneLine = new String[parameterCount.length];
 
-
-
+        for (int i = 0; i < fullLine.size(); i++) {
+            oneLine = fullLine.get(i).split(separate);
         }
 
-        System.out.println(lineCount);
-
-        String[] fullLine = new String[lineCount];
-
-        for (int i = 0; i < lineCount; i++) {
-            fullLine[i] = sc.nextLine();
-            System.out.println(fullLine[i]);
+        for (String element : oneLine) {
+            System.out.println(element);
         }
 
-        // String separate = "[,]";
-
-        // String[] arr = temp.split(separate);
-        // for (String element : arr) {
-        // System.out.println(element);
-        // }
-
-        // System.out.println(temp);
-
+        return oneLine;
     }
 }
