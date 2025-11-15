@@ -25,14 +25,16 @@ public class App {
         int[] planetMoons = new int[fullLine.size()];
         String[] planetDescriptions = new String[fullLine.size()];
 
-        // int count = splitLines(fullLine, 0).length;
-
-        for (int h = 0; h < fullLine.size(); h++) {
-
+        for (int h = 1; h < fullLine.size(); h++) {
+            planetNames[h] = splitLines(fullLine, h)[0];
+            planetSizes[h] = splitLines(fullLine, h)[1];
+            planetDistances[h] = Double.valueOf(splitLines(fullLine, h)[2]);
+            planetMoons[h] = Integer.valueOf(splitLines(fullLine, h)[3]);
+            planetDescriptions[h] = splitLines(fullLine, h)[4];
+            System.out.println(planetNames[h] + ", " + planetSizes[h] + ", " +
+                    planetDistances[h] + ", "
+                    + planetMoons[h] + ", " + planetDescriptions[h]);
         }
-
-        splitLines(fullLine, i);
-        i++;
 
     }
 
