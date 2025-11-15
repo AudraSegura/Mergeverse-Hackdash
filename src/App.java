@@ -18,9 +18,17 @@ public class App {
 
         int lineCount = 0;
 
+  
+        
         while (sc.hasNextLine()) {
-            sc.nextLine();
+             sc.nextLine();
+            //System.out.println(temp);
+
+
             lineCount++;
+
+
+
         }
 
         System.out.println(lineCount);
