@@ -6,4 +6,4 @@ Mars,Small,227.9,2,A dusty red desert world with the largest volcano in the sola
 Jupiter,Large,778.5,79,A massive gas giant with swirling storms including the Great Red Spot and dozens of diverse moons.
 Saturn,Large,1434,83,Known for its iconic icy rings and many moons Saturn is a light windy gas giant.
 Uranus,Large,2871,27,A cold tilted ice giant that rotates sideways giving it extreme seasons and a pale blue color.
-Neptune,Large,4495,14,The farthest major planet a deep blue ice giant with strong winds and swirling storms.
+Neptune,Large,4495,14,The farthest major planet a deep blue ice giant with strong winds and swirling storm
