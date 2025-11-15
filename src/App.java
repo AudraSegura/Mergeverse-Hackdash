@@ -15,40 +15,22 @@ public class App {
 
         Scanner sc = new Scanner(planets);
 
-        // System.out.println("Working directory: " + System.getProperty("user.dir"));
-        // System.out.println(sc.hasNextLine());
-  
-        // String[] fullLine = new String[lineCount];
+    
 
-        //int lineCount = 0;
-
+    public static String [] ()
+        
         ArrayList<String> fullLine = new ArrayList<String>();
 
   
         
         while (sc.hasNextLine()) {
             fullLine.add(sc.nextLine());
-       
-            //System.out.println(temp);
-
-            
-            // lineCount++;
-
-
 
         }
+    
 
-        // System.out.println(lineCount);
+    public static 
 
-        // String[] fullLine = new String[lineCount];
-
-        // for (int i = 0; i < lineCount; i++) {
-        //     fullLine[i] = sc.nextLine();
-        //     System.out.println(fullLine[i]);
-        // }
-
-
-        // ArrayList<String> oneLine = new ArrayList<String>();
         String separate = "[,]";
         String [] parameterCount = fullLine.get(0).split(separate);
         String [] oneLine = new String [parameterCount.length];
@@ -62,14 +44,5 @@ public class App {
             System.out.println(element);
         }
 
-
-
-        // for (String element : arr) {
-        // System.out.println(element);
-        // }
-
-        // System.out.println(temp);
-
-    
     }
 }
