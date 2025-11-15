@@ -1,7 +1,7 @@
 
 /* DEVELOPERS: Audra Segura, Sadia Firdous
  * DATE: 11-15-2025
- * DESCRIPTION: 
+ * DESCRIPTION: Create a display of planets, their sizes, distances,number of moons they have, and the description of the planets.
  */
 import java.io.File;
 import java.util.ArrayList;
@@ -16,8 +16,6 @@ public class App {
 
         // Create scanner which reads file line by line
         Scanner sc = new Scanner(planets);
-
-        int i = 0;
 
         // Store full Lines from the planets.txt file
         ArrayList<String> fullLine = new ArrayList<String>();
@@ -37,15 +35,35 @@ public class App {
         // int count = splitLines(fullLine, 0).length;
 
         for (int h = 1; h < fullLine.size(); h++) {
-            planetNames[h] = splitLines(fullLine, h)[0];
-            planetSizes[h] = splitLines(fullLine, h)[1];
-            planetDistances[h] = Double.valueOf(splitLines(fullLine, h)[2]);
-            planetMoons[h] = Integer.valueOf(splitLines(fullLine, h)[3]);
-            planetDescriptions[h] = splitLines(fullLine, h)[4];
-            System.out.println(planetNames[h] + ", " + planetSizes[h] + ", " +
-                    planetDistances[h] + ", "
-                    + planetMoons[h] + ", " + planetDescriptions[h]);
+            planetNames[h - 1] = splitLines(fullLine, h)[0];
+            planetSizes[h - 1] = splitLines(fullLine, h)[1];
+            planetDistances[h - 1] = Double.valueOf(splitLines(fullLine, h)[2]);
+            planetMoons[h - 1] = Integer.valueOf(splitLines(fullLine, h)[3]);
+            planetDescriptions[h - 1] = splitLines(fullLine, h)[4];
+            System.out.println(planetNames[h - 1] + ", " + planetSizes[h - 1] + ", " +
+                    planetDistances[h - 1] + ", "
+                    + planetMoons[h - 1] + ", " + planetDescriptions[h - 1]);
         }
+
+
+
+
+
+
+        Scanner cs = new Scanner(System.in);
+        System.out.println("Enter any numbers (1 - 5): ");
+
+        int option = cs.nextInt();;
+
+
+        // switch (option) {
+        //     case 1:
+        //     printPlanets(planetNames, planetSizes, planetDistances, planetMoons, planetDescriptions);
+        //     break;
+
+        // }
+        // :
+
 
     }
 
@@ -60,6 +78,6 @@ public class App {
         oneLine = fullLine.get(i).split(separate);
         // Return the information of the split
         return oneLine;
-    }  
+    }
 
 }
