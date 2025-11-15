@@ -11,33 +11,54 @@ import java.util.ArrayList;
 public class App {
     public static void main(String[] args) throws Exception {
 
+        // Create a file for planets
         File planets = new File("planets.txt");
 
+        // Create scanner which reads file line by line
         Scanner sc = new Scanner(planets);
 
+        int i = 0;
+
+        // Store full Lines from the planets.txt file
         ArrayList<String> fullLine = new ArrayList<String>();
 
+        // Read all the lines from the planets.txt file
         while (sc.hasNextLine()) {
             fullLine.add(sc.nextLine());
         }
 
-        System.out.println(splitLines(fullLine));
+        // Create arrays to store all the information of planets
+        String[] planetNames = new String[fullLine.size()];
+        String[] planetSizes = new String[fullLine.size()];
+        double[] planetDistances = new double[fullLine.size()];
+        int[] planetMoons = new int[fullLine.size()];
+        String[] planetDescriptions = new String[fullLine.size()];
+
+        // int count = splitLines(fullLine, 0).length;
+
+
+        // Loop through all the lines from the file
+        for (int h = 0; h < fullLine.size(); h++) {
+
+        }
+
+        // SplitLines is called
+        splitLines(fullLine, i);
+        i++;
+
     }
 
-    public static String[] splitLines(ArrayList<String> fullLine) {
+    public static String[] splitLines(ArrayList<String> fullLine, int i) {
 
+        // Split all the words using comma
         String separate = "[,]";
         String[] parameterCount = fullLine.get(0).split(separate);
         String[] oneLine = new String[parameterCount.length];
 
-        for (int i = 0; i < fullLine.size(); i++) {
-            oneLine = fullLine.get(i).split(separate);
-        }
-
-        for (String element : oneLine) {
-            System.out.println(element);
-        }
-
+        // Split the line i and then store that in oneLine
+        oneLine = fullLine.get(i).split(separate);
+        // Return the information of the split
         return oneLine;
-    }
+    }  
+
 }
