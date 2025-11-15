@@ -11,26 +11,45 @@ public class App {
 
         File planets = new File("planets.txt");
 
-        if (!planets.exists()) {
-            System.out.println("File not found!");
-            return;
-        }
-        if (planets.length() == 0) {
-            System.out.println("File is empty!");
-            return;
-        }
         Scanner sc = new Scanner(planets);
 
         System.out.println("Working directory: " + System.getProperty("user.dir"));
-        System.out.println("testing print");
         System.out.println(sc.hasNextLine());
 
+        int lineCount = 0;
+        
         while (sc.hasNextLine()) {
-            // System.out.println(sc.hasNextLine());
-            String test = sc.nextLine();
-            System.out.println("testing print in while loop");
-            System.out.println(test);
+             sc.nextLine();
+            //System.out.println(temp);
+
+
+            lineCount++;
+
+
+
         }
+
+        System.out.println(lineCount);
+
+        String [] fullLine =new String [lineCount];
+
+
+        for (int i = 0; i < lineCount; i++) {
+            fullLine[i] = sc.nextLine();
+            System.out.println(fullLine[i]);
+
+
+        }
+
+            // String separate = "[,]";
+
+            // String[] arr = temp.split(separate);
+            // for(String element : arr){
+            //     System.out.println(element);
+            // }
+
+           // System.out.println(temp);
+        
 
     }
 }
