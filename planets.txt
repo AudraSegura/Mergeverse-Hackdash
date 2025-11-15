@@ -1,11 +1,6 @@
-\
 Planet,Size,Distance From Sun,Moons,Description
 Mercury,Small,57.9,0,The smallest and fastest planet scorched on one side and frozen on the other due to its lack of atmosphere.
-<<<<<<< HEAD
-Venus,Medium,108.2,0,A hot toxic world with thick clouds and extreme pressure often called Earth’s evil twin.
-=======
 Venus,Medium,108.2,0,A hot toxic world with thick clouds and extreme pressure often called Earths evil twin.
->>>>>>> 32adcacdefd33db9c92b7c30dc93cc0b6ce68e97
 Earth,Medium,149.6,1,The only known planet with life rich blue oceans and a protective atmosphere that supports diverse ecosystems.
 Mars,Small,227.9,2,A dusty red desert world with the largest volcano in the solar system and evidence of ancient water.
 Jupiter,Large,778.5,79,A massive gas giant with swirling storms including the Great Red Spot and dozens of diverse moons.

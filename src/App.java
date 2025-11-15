@@ -17,8 +17,6 @@ public class App {
         // Create scanner which reads file line by line
         Scanner sc = new Scanner(planets);
 
-        int i = 0;
-
         // Store full Lines from the planets.txt file
         ArrayList<String> fullLine = new ArrayList<String>();
 
@@ -37,14 +35,14 @@ public class App {
         // int count = splitLines(fullLine, 0).length;
 
         for (int h = 1; h < fullLine.size(); h++) {
-            planetNames[h] = splitLines(fullLine, h)[0];
-            planetSizes[h] = splitLines(fullLine, h)[1];
-            planetDistances[h] = Double.valueOf(splitLines(fullLine, h)[2]);
-            planetMoons[h] = Integer.valueOf(splitLines(fullLine, h)[3]);
-            planetDescriptions[h] = splitLines(fullLine, h)[4];
-            System.out.println(planetNames[h] + ", " + planetSizes[h] + ", " +
-                    planetDistances[h] + ", "
-                    + planetMoons[h] + ", " + planetDescriptions[h]);
+            planetNames[h - 1] = splitLines(fullLine, h)[0];
+            planetSizes[h - 1] = splitLines(fullLine, h)[1];
+            planetDistances[h - 1] = Double.valueOf(splitLines(fullLine, h)[2]);
+            planetMoons[h - 1] = Integer.valueOf(splitLines(fullLine, h)[3]);
+            planetDescriptions[h - 1] = splitLines(fullLine, h)[4];
+            System.out.println(planetNames[h - 1] + ", " + planetSizes[h - 1] + ", " +
+                    planetDistances[h - 1] + ", "
+                    + planetMoons[h - 1] + ", " + planetDescriptions[h - 1]);
         }
 
     }
@@ -60,6 +58,6 @@ public class App {
         oneLine = fullLine.get(i).split(separate);
         // Return the information of the split
         return oneLine;
-    }  
+    }
 
 }
