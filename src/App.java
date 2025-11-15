@@ -1,7 +1,7 @@
 
 /* DEVELOPERS: Audra Segura, Sadia Firdous
  * DATE: 11-15-2025
- * DESCRIPTION: 
+ * DESCRIPTION: Create a display of planets, their sizes, distances,number of moons they have, and the description of the planets.
  */
 import java.io.File;
 import java.util.ArrayList;
@@ -45,6 +45,21 @@ public class App {
                     planetMoons[h - 1], "moons",
                     planetDescriptions[h - 1]);
         }
+
+        // Scanner cs = new Scanner(System.in);
+        // System.out.println("Enter any numbers (1 - 5): ");
+
+        // int option = cs.nextInt();;
+
+        // switch (option) {
+        // case 1:
+        // printPlanets(planetNames, planetSizes, planetDistances, planetMoons,
+        // planetDescriptions);
+        // break;
+
+        // }
+        // :
+
     }
 
     public static String[] splitLines(ArrayList<String> fullLine, int i) {
