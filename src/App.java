@@ -41,8 +41,7 @@ public class App {
 
             System.out.printf("\n\n%-20s %s%-20s %.1f %-30s %d %-10s \nDescription: %s\n\n",
                     (planetNames[h - 1] + ":"), "Size ", planetSizes[h - 1], planetDistances[h - 1],
-                    "inches from the sun",
-                    planetMoons[h - 1], "moons",
+                    "inches from the sun", planetMoons[h - 1], "moons",
                     planetDescriptions[h - 1]);
         }
 
